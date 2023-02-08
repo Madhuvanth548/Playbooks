@@ -1,0 +1,9 @@
+
+- hosts: localhost
+  become: True
+  tasks:
+
+   - name: copy module
+     copy:
+       src: /tmp/tower/ansible-tower-setup-3.8.6-2/test/new
+       dest: /
